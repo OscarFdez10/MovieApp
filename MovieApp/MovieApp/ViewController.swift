@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mostPopularMoviesButton: UIButton!
+    @IBOutlet weak var mostPopularSeriesButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        mostPopularMoviesButton.setTitle("Movies", for: .normal)
+        mostPopularSeriesButton.setTitle("Series", for: .normal)
     }
 
-
+    @IBAction func onMostPopularMoviesButton(_ sender: Any) {
+        print("Movie Button")
+    }
+    
+    @IBAction func onMostPopularSeriesButton(_ sender: Any) {
+        print("Series Button")
+    }
+    
 }
 
